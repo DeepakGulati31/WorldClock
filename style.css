@@ -1,0 +1,20 @@
+.alarm-position {
+    margin-left: 540px;
+    margin-top: 30px;
+}
+
+.ind{
+    color:white;
+    text-decoration: none;;
+}
+.us{
+    color:black;
+    text-decoration: none;
+}
+body{
+    background-image: url('./night\ view.jpg');
+    width:100%;
+}
+.head{
+    color:whitesmoke
+}

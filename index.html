@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Clock</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg  bg-body-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> Welcome To World Clock</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h1 class="text-center my-3  head">Welcome to World Clock</h1>
+        <main class="my-3">
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-dark">
+                        <div class="card-header py-3 text-bg-warning">
+                            <h4 class="my-0 fw-normal ">India <i class="bi bi-clock"></i></h4>
+                        </div>
+                        <div class="card-body ">
+                            <h1 class="card-title pricing-card-title" id="india"></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Long-Name: Republic Of India</li>
+                                <li>Abbreviations: IN,IND</li>
+                                <li>Capital: New Delhi</li>
+                                <li>DialCode: +91</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-warning"><a class="ind"
+                                    href=" https://www.timeanddate.com/time/zone/india">More About This
+                                    Zone</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-warning">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">United States <i class="bi bi-clock"></i></h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title" id="us"></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Long-Name: United States of America</li>
+                                <li>Abbreviations: US, USA</li>
+                                <li>Capital: Washington DC</li>
+                                <li>DialCode: +1</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-warning"><a class="us"
+                                    href=" https://www.timeanddate.com/time/zone/usa">More About This Zone</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-warning">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">China <i class="bi bi-clock"></i></h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title" id="china"></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Long Name: People's Republic of China </li>
+                                <li>Abbreviations: CN, CHN</li>
+                                <li>Capital: Beijing</li>
+                                <li>Dial Code: +86 </li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-warning"><a class="us"
+                                    href="https://www.timeanddate.com/time/zone/china#:~:text=Time%20Zone%20in%20China&text=China%20has%20one%20official%20time,is%20known%20as%20Beijing%20Time.">More
+                                    About This Zone</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-4">
+                <h1 class="text-center head">Set Your Alarm</h1>
+                <div class="alarm-position">
+                    <label class="head "for="time"> Select A time: </label>
+                    <input class="bg-warning border-warning"type="time" id="alarm" name="alarm">
+                </div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                crossorigin="anonymous"></script>
+
+            <script src="./index.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+<div class="container my-5">
+    <h1 class="text-center my-3">Welcome to World Clock</h1>
+    <main class="my-3">
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-dark">
+                    <div class="card-header py-3 text-bg-dark">
+                        <h4 class="my-0 fw-normal ">India <i class="bi bi-clock"></i></h4>
+                    </div>
+                    <div class="card-body ">
+                        <h1 class="card-title pricing-card-title" id="india"></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>10 users included</li>
+                            <li>2 GB of storage</li>
+                            <li>Email support</li>
+                            <li>Help center access</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-dark">More About This Zone</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-secondary">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">United States <i class="bi bi-clock"></i></h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title" id="us"></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>20 users included</li>
+                            <li>10 GB of storage</li>
+                            <li>Priority email support</li>
+                            <li>Help center access</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-outline-dark">More About This
+                            Zone</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-secondary">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">China <i class="bi bi-clock"></i></h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title" id="china"></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>30 users included</li>
+                            <li>15 GB of storage</li>
+                            <li>Phone and email support</li>
+                            <li>Help center access</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-outline-dark">Contact us</button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
